@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- font AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    <!-- custom css -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="styles.css/contactoStyles.css">
+</head>
+
+<body>
+<div class="inicio">
+    <div class="container">
+        <nav class="nav-main">
+            <img src="img/RAZONAR LOGO.jpeg" alt="razonar logo" class="nav-brand">
+        <ul class="nav-menu">
+            <li>
+                <a class="aInicio" href="/index.html">Inicio</a>
+            </li>
+            <li>
+                <a class="aInicio" href="">Nuestra Historia</a>
+            </li>
+            <li>
+                <a class="aInicio" href="">Recursos</a>
+            </li>
+            <li>
+                <a class="aInicio" href="">Etcetera</a>
+            </li>
+        </ul>
+        <ul class="nav-menu-right">
+            <li>
+                <a class="aInicio" href="">
+                    <i class="fas fa-search"></i>
+                </a>
+            </li>
+        </ul>
+        </nav>
+        <hr class="hrInicio">
+    </div>
+</div>
+
+<main>
+	<form action="" class="formulario" id="formulario">
+		<!-------------------------- GRUPO NOMBRE ------------------------>
+		<div class="formulario__grupo" id="grupo__nombre">
+			<!-- <label for="nombre" class="formulario__label">Nombre</label> -->
+			<div class="formulario__grupo-input">
+				<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+				<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+			</div>
+			<p class="formulario__input-error">El nombre tiene que ser de 4 a 22 digitos y solo puede contener letras </p>
+		</div>
+
+        		<!-------------------------- GRUPO CORREO ELECTRONICO ------------------------>
+		<div class="formulario__grupo" id="grupo__correo">
+			<label for="correo" class="formulario__label">Correo Electronico</label>
+			<div class="formulario__grupo-input">
+				<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+				<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+			</div>
+			<p class="formulario__input-error">El correo solo puede contener letras, numeros, guiones y guion bajo. </p>
+		</div>
+
+
+		<!-------------------------- GRUPO TELEFONO ------------------------>
+		<div class="formulario__grupo" id="grupo__telefono">
+			<label for="telefono" class="formulario__label">Telefono</label>
+			<div class="formulario__grupo-input">
+				<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234534">
+				<i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+			</div>
+			<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 digitos. </p>
+		</div>
+
+
+    <div class="formulario__mensaje" id="formulario__mensaje">
+        <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por favor rellene el formulario correctamente. </p>
+    </div>
+
+    <div class="formulario__grupo formulario__grupo-btn-enviar">
+        <button type="submit" class="formulario__btn">Enviar</button>
+        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!!</p>
+    </div>
+</form>
+</main>
+
+<script src="/main.js/Contacto.js"></script>
+</body>
