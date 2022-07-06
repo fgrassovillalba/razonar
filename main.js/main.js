@@ -12,4 +12,7 @@ document.querySelector(".menu-btn").addEventListener("click", () => {
   ScrollReveal().reveal('.footer-links', { delay: 500 });
 
 
+  function moverseA(cards-banner-one) {
+    location.hash = #nuestra-historia;
+}
   

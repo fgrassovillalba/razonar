@@ -1,60 +1,51 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
-body{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
+
 a{color: rgb(0, 0, 0);
-    text-decoration-line: none;}
+  text-decoration-line: none;}
 
 ul{list-style: none;}
 
 .container{
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
 
-/* navegacion */
 .nav-main{
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    padding: 10px 0px;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 10px 0px;
 }
 .nav-brand{
-    width: 60px;
+  width: 60px;
 }
 
 /* navbar left */
 .nav-main ul{
-    display: flex;}
+  display: flex;}
 
 .nav-main ul li{
-    padding: 10px;
+  padding: 10px;
 }
 
 .nav-main ul li a{
-    padding: 2px;
+  padding: 2px;
 }
 .nav-main ul li a:hover {
-    border-bottom: 4px solid rgb(243, 239, 239);
+  border-bottom: 4px solid rgb(243, 239, 239);
 }
 
 .nav-main ul.nav-menu{
-    flex: 1;
-    margin-left: 20px;
+  flex: 1;
+  margin-left: 20px;
 }
 hr{
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
+
+
 
 
 /* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
@@ -66,7 +57,7 @@ hr{
   margin-top: 30px;
   padding: 20px;
   box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
-  position: relative;
+  position: relative; */
 }
 .formulario__titulo {
   text-align: center;

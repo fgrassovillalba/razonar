@@ -1,6 +1,7 @@
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
+
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -8,32 +9,16 @@ const expresiones = {
 }
 
 const campos = {
-    usuario: false,
     nombre: false,
-    password: false,
     correo: false,
     telefono: false
 }
 
 const validarFormulario = (e) => {
     switch (e.target.name) {
-        case "usuario":
-            validarCampo(expresiones.usuario, e.target, 'usuario');
-            
-        break;
 
         case "nombre":
             validarCampo(expresiones.nombre, e.target, 'nombre');
-        break;
-
-        case "password":
-            validarCampo(expresiones.password, e.target, 'password');
-            validarPassword2()
-        break;
-
-        case "password2":
-            validarPassword2()
-            
         break;
 
         case "correo":
@@ -54,7 +39,7 @@ const validarCampo = (expresion, input, campo) => {
         document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
         document.querySelector(`#grupo__${campo} i`).classList.remove('fa-circle-xmark');
         document.querySelector(`#grupo__${campo} i`).classList.add('fa-circle-check');
-        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+        document.querySelector(`#grupo__${campo}.formulario__input-error`).classList.remove('formulario__input-error-activo');
         campos[campo] = true;
         
     } else {
@@ -76,9 +61,8 @@ inputs.forEach( (input) => {
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const terminos = document.getElementById('terminos');
 
-    if(campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked) {
+    if(campos.nombre && campos.correo && campos.telefono) {
         formulario.reset();
 
         document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
